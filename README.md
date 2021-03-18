@@ -29,3 +29,5 @@ If a program that uses threads is going to be executed then compilance should be
 ``` ./nameCompiledFile ```
 
 ### Use:
+Example_no_validation_input.c requests 3 variables: a integer, b float, c char. Typing a different input unexpected will give error and non desired result.
+Example_validation_input.c is the same program validating the input. If the input is unexpected will advice.
