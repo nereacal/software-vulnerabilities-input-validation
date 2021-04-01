@@ -10,7 +10,6 @@ Errors that cause input validation vulnerability are produced by the incorrect v
 - Incorrect validation of the syntactic content. HTML/JS/Commands/SQL/String injection.
 
 
-Vulnerabilities will be programs written in C. First needed is a C compiler in any OS.
 ### Windows:
 MinGW can be downloaded from here https://sourceforge.net/projects/mingw/files/Installer/
 Once installed and given an example of program.c :
