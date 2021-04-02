@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main(){
 
@@ -6,14 +6,12 @@ int main(){
     float b;
     char c;
 
-    // variable A
     printf("Introduce un valor entero para la variable A : ");
     if(scanf("%i", &a) != 1)
         printf("Entero no válido\n");
     else
         printf(" el valor es: %i\n",a);
 
-    // variable B
     printf("Introduce un valor flotante para la variable B : ");
     while((c = getchar()) != '\n' && c != EOF);
     if(scanf("%f", &b) != 1)
@@ -21,7 +19,6 @@ int main(){
     else
         printf(" el valor de la variable B es: %f\n",b);
 
-    // variable C
     printf("Introduce un caracter para la variable C : ");
    
     while((c = getchar()) != '\n' && c != EOF);
