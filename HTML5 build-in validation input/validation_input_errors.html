@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Build-in validation input</title>
+        <link rel="stylesheet" type="text/css" href="validation_input_errors.css">
+	</head>
+	<body>
+
+        <h3>The following errors prevent the form from being submitted</h3>
+
+        <!--                    Bad input                   -->
+        <form method="post" action="">
+            <h4>1. Bad input. Input type must be number </h4>
+            <input type="number"/>
+            <button type="submit">submit</button>
+        </form><br>
+
+        <!--                    Pattern Mismatch            -->
+        <form method="post" action="">
+          <h4>2. Pattern Mismatch. The editing fields must follow the original pattern if not, css pseudo-class for invalid input is drawn</h4>
+           <label>Enter phone number in the format (123)456-7890
+            (<input name="tel1" type="tel" pattern="[0-9]{3}" placeholder="###" aria-label="3-digit area code" size="2"/>)-
+             <input name="tel2" type="tel" pattern="[0-9]{3}" placeholder="###" aria-label="3-digit prefix" size="2"/> -
+             <input name="tel3" type="tel" pattern="[0-9]{4}" placeholder="####" aria-label="4-digit number" size="3"/>
+             <button type="submit">submit</button>
+           </label><br>
+        </form>
+
+        <!--                    rangeOverflow                   -->
+        <form method="post" action="">
+            <h4>3. rangeOverflow. Max value is 5</h4>
+            <input type="number" max="5" />
+            <button type="submit">submit</button>
+        </form><br>
+
+        <!--                    rangeUnderflow                   -->
+        <form method="post" action="">
+            <h4>4. rangeUnderflow. Min value is 2</h4>
+            <input type="number" min="2" />
+            <button type="submit">submit</button>
+        </form><br>
+
+	</body>
+</html>
