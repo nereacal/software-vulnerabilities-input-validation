@@ -3,5 +3,3 @@ PHP functions to prevent errors:
 - ```trim()``` strip unnecessary characters from user's input data
 - ```stripslashes()``` removes backslashes ('\')
 - Create functions to check data
-
-  http://localhost/software-vulnerabilities-input-validation/PHP%20input%20validation/php_validation_input.php
